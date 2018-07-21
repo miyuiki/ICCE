@@ -31,6 +31,7 @@ if __name__ == '__main__':
     for i in student_id:
         if i not in student_set:
             student_set.append(i)
+    student_set = sorted(student_set)
     for uid in student_set:
         student.append(Student(uid))
 
